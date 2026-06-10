@@ -66,10 +66,9 @@ h3{font-size:1.2rem;font-weight:700}
 .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand-text{
-  font-family:var(--font-mono);font-weight:700;font-size:1.05rem;
-  letter-spacing:.14em;display:flex;flex-direction:column;line-height:1.1;color:var(--ink);
+  font-family:var(--font-mono);font-weight:700;font-size:1.02rem;
+  letter-spacing:.12em;line-height:1;color:var(--ink);white-space:nowrap;
 }
-.brand-text small{font-size:.56rem;letter-spacing:.16em;color:var(--accent);font-weight:500;font-family:"Noto Sans JP",sans-serif}
 
 .nav{display:flex;align-items:center;gap:34px}
 .nav a{font-size:.92rem;color:#3a4d2b;transition:color .2s;position:relative}
@@ -191,7 +190,8 @@ h3{font-size:1.2rem;font-weight:700}
   transition:transform .3s var(--ease),border-color .3s,background .3s;
 }
 .strength-card:hover{transform:translateY(-5px);border-color:rgba(255,255,255,.32);background:var(--surface-hover)}
-.strength-icon{font-size:2rem;display:block;margin-bottom:16px}
+.strength-icon{display:block;margin-bottom:18px;color:#496534}
+.strength-icon svg{width:42px;height:42px;display:block}
 .strength-card h3{margin-bottom:10px}
 .strength-card p{color:var(--ink-soft);font-size:.92rem}
 
@@ -301,3 +301,37 @@ h3{font-size:1.2rem;font-weight:700}
 @media (max-width:560px){
   .hero::before,.hero::after{display:none}
 }
+
+/* ===== Cream sections (alternating green / cream) ===== */
+.section-cream{background:var(--cream);color:#2f3d22}
+.section-cream h2,.section-cream h3{color:#22380f}
+.section-cream .section-label{color:#5a7a32}
+.section-cream .section-sub{color:rgba(34,56,15,.72)}
+.section-cream .lead-text{color:#22380f}
+.section-cream p,
+.section-cream .about-grid p:not(.lead-text){color:rgba(34,56,15,.78)}
+
+/* cards on cream → solid white with dark ink */
+.section-cream .service-card,
+.section-cream .strength-card,
+.section-cream .company-card{
+  background:#ffffff;border-color:rgba(34,56,15,.12);
+}
+.section-cream .service-card:hover,
+.section-cream .strength-card:hover{
+  background:#ffffff;border-color:rgba(34,56,15,.28);box-shadow:0 22px 46px rgba(34,56,15,.14);
+}
+.section-cream .service-num{color:#496534;border-color:rgba(34,56,15,.22)}
+.section-cream .service-desc,
+.section-cream .strength-card p,
+.section-cream .feature-list li{color:rgba(34,56,15,.78)}
+.section-cream .feature-list li::before,
+.section-cream .service-card::before{background:#5a7a32}
+.section-cream .service-card::after{color:rgba(34,56,15,.42)}
+.section-cream .strength-icon{color:#496534}
+.section-cream .info-list dt{color:#5a7a32}
+.section-cream .info-list dd{color:rgba(34,56,15,.78)}
+
+/* CTA button on cream → green fill */
+.section-cream .btn-primary{background:#496534;color:var(--cream);box-shadow:0 10px 28px rgba(34,56,15,.2)}
+.section-cream .btn-primary:hover{background:#3a5320;box-shadow:0 16px 38px rgba(34,56,15,.28)}
