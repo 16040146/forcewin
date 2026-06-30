@@ -42,14 +42,12 @@ h3{font-size:1.2rem;font-weight:700}
 
 .accent{color:var(--accent)}
 
-/* ---------- Brand logo (CSS mask → recolored cream on green) ---------- */
+/* ---------- Brand logo (real image, white background) ---------- */
 .brand-logo{
-  width:30px;height:50px;flex:none;display:block;
-  background-color:var(--cream);
-  -webkit-mask:url("assets/logo.svg") center/contain no-repeat;
-          mask:url("assets/logo.svg") center/contain no-repeat;
+  height:50px;width:auto;flex:none;display:block;
+  background:#fff;border-radius:6px;
 }
-.brand-logo-sm{width:26px;height:44px}
+.brand-logo-sm{height:44px;border-radius:5px}
 
 /* ---------- Header ---------- */
 .site-header{
@@ -59,8 +57,7 @@ h3{font-size:1.2rem;font-weight:700}
   transition:box-shadow .35s var(--ease);
 }
 .site-header.scrolled{box-shadow:0 6px 24px rgba(0,0,0,.16)}
-/* header sits on cream → brand & nav use dark green for contrast */
-.site-header .brand-logo{background-color:#496534}
+/* header sits on cream → nav uses dark green for contrast */
 .site-header .brand-text{color:#2a4612}
 .site-header .brand-text small{color:#496534}
 .header-inner{display:flex;align-items:center;justify-content:space-between;height:72px}
