@@ -227,10 +227,26 @@ h3{font-size:1.2rem;font-weight:700}
 .info-list div{display:grid;grid-template-columns:104px 1fr;gap:14px;align-items:start}
 .info-list dt{color:var(--accent);font-size:.82rem;font-weight:700;padding-top:2px}
 .info-list dd{color:var(--ink-soft);font-size:.95rem}
+.info-list dd a{
+  color:#496534;font-weight:600;
+  text-decoration:underline;text-decoration-color:rgba(73,101,52,.4);
+  text-underline-offset:3px;transition:text-decoration-color .2s;
+}
+.info-list dd a:hover{text-decoration-color:#496534}
 
 /* ---------- Footer ---------- */
 .site-footer{border-top:1px solid var(--line);padding:40px 0;background:var(--bg-deep)}
 .footer-inner{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.footer-sites{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+.footer-sites-label{
+  font-family:var(--font-mono);font-size:.72rem;font-weight:600;
+  letter-spacing:.2em;color:var(--ink-dim);
+}
+.footer-sites a{
+  color:rgba(238,235,225,.78);font-size:.86rem;transition:color .2s;
+  text-underline-offset:3px;
+}
+.footer-sites a:hover{color:#fff;text-decoration:underline}
 .copyright{color:var(--ink-dim);font-size:.82rem}
 
 /* ---------- Reveal animation ---------- */
