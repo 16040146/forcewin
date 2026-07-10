@@ -75,8 +75,9 @@ h3{font-size:1.2rem;font-weight:700}
 }
 .nav a:not(.nav-cta):hover{color:#1f3a0e}
 .nav a:not(.nav-cta):hover::after{width:100%}
+.nav a.nav-cta,
 .nav-cta{
-  background:#496534;color:var(--cream);font-weight:700;
+  background:#496534;color:#fff;font-weight:700;
   padding:9px 18px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;
 }
 .nav-cta:hover{transform:translateY(-2px);background:#3a5320;box-shadow:0 8px 22px rgba(42,70,18,.3)}
