@@ -18,7 +18,6 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="/assets/css/styles.css" />
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <style>
 /* ===== recruit page local styles ===== */
 .recruit-hero{position:relative;padding:170px 0 90px;overflow:hidden}
@@ -417,11 +416,6 @@
           </label>
         </div>
 
-        <div class="field">
-          <label>スパム防止の確認 <span class="badge req">必須</span></label>
-          <div class="g-recaptcha" data-sitekey="6Lf_Rm4tAAAAADZRgA5xOlEvR5cmoGCZ37CDoK6Z"></div>
-        </div>
-
         <button type="submit" class="submit-btn" id="submitBtn">応募する</button>
         <p class="privacy-note">ご入力いただいた個人情報は、採用選考の目的にのみ利用します。</p>
       </form>
@@ -483,17 +477,11 @@
     alert(msg);
     btn.disabled = false;
     btn.textContent = "応募する";
-    if (window.grecaptcha) grecaptcha.reset();
   }
 
   form.addEventListener("submit", function(ev){
     ev.preventDefault();
 
-    var token = (window.grecaptcha && grecaptcha.getResponse()) || "";
-    if (!token){
-      alert("「私はロボットではありません」にチェックを入れてください。");
-      return;
-    }
     var fileInput = document.getElementById("f-file");
     var file = fileInput.files && fileInput.files[0];
     if (!file){
@@ -519,7 +507,6 @@
         "入社可能時期": val("f-start"),
         "自己PR・志望動機": val("f-pr"),
         "_honey": document.getElementById("honeyField").value,
-        "recaptchaToken": token,
         "fileName": file.name,
         "fileMime": file.type,
         "fileData": base64
