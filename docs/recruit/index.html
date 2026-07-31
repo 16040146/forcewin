@@ -340,7 +340,7 @@
         <p class="section-sub">必要事項をご入力のうえ送信してください。数営業日以内にご連絡いたします。</p>
       </div>
 
-      <form class="apply-card reveal" action="https://formsubmit.co/stanley.ng@forcewin-ict.jp" method="POST" enctype="multipart/form-data">
+      <form class="apply-card reveal" id="applyForm" action="https://formsubmit.co/7ac11597d0db4da8cabc887ed867ead4" method="POST" enctype="multipart/form-data">
         <span class="form-label">Application Form</span>
 
         <!-- FormSubmit settings -->
@@ -348,6 +348,7 @@
         <input type="hidden" name="_template" value="table" />
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://forcewin-ict.jp/recruit/thanks.html" />
+        <input type="hidden" name="_replyto" id="replyTo" />
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
 
         <div class="field">
@@ -447,6 +448,16 @@
 
 <script src="/assets/js/script.js"></script>
 <script>
+// 送信時：応募者のメールアドレスをReply-Toに設定（返信ボタンで直接返信できるように）
+(function(){
+  var form = document.getElementById("applyForm");
+  var email = document.getElementById("f-email");
+  var replyTo = document.getElementById("replyTo");
+  if (form && email && replyTo){
+    form.addEventListener("submit", function(){ replyTo.value = email.value; });
+  }
+})();
+
 // 選択したファイル名を表示
 (function(){
   var input = document.getElementById("f-file");
