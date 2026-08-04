@@ -11,6 +11,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://forcewin-ict.jp/recruit/admin/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://forcewin-ict.jp/recruit/engineer/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
