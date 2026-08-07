@@ -30,6 +30,19 @@
   border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:var(--accent);
 }
 
+.hero-tags.appeal{margin-top:-22px;margin-bottom:34px}
+.hero-tags.appeal span{
+  background:rgba(214,233,168,.14);border-color:transparent;color:var(--accent);
+  font-size:.74rem;padding:5px 12px;
+}
+
+/* support / organization cards */
+.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
+.support-card{background:#fff;border-radius:var(--radius);padding:28px 26px;box-shadow:0 4px 18px rgba(34,56,15,.08)}
+.support-card h3{color:#2a4612;margin-bottom:10px;font-size:1.05rem}
+.support-card h3 small{font-family:var(--font-mono);font-weight:600;font-size:.72rem;letter-spacing:.12em;color:#5a7a32;display:block;margin-bottom:2px}
+.support-card p{font-size:.92rem;color:rgba(34,56,15,.82)}
+
 /* position switcher */
 .pos-switch{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
 .pos-switch a{
@@ -149,7 +162,7 @@
 .privacy-note{margin-top:18px;font-size:.8rem;color:rgba(34,56,15,.55);text-align:center}
 
 @media (max-width:860px){
-  .duty-grid,.req-cols{grid-template-columns:1fr}
+  .duty-grid,.req-cols,.support-grid{grid-template-columns:1fr}
   .process-steps{grid-template-columns:1fr 1fr}
   .job-table>div{grid-template-columns:1fr}
   .job-table dt{padding:12px 20px 4px;background:rgba(0,0,0,.14)}
@@ -200,6 +213,9 @@
       <div class="hero-tags">
         <span>正社員</span><span>当面フルリモート</span><span>年収450万〜700万円</span><span>英語必須</span><span>入社時期 即日〜応相談</span>
       </div>
+      <div class="hero-tags appeal">
+        <span>2026年設立・日本法人創業メンバー</span><span>シンガポール直属</span><span>英語活用環境</span><span>国際グループ企業</span><span>海外拠点連携</span><span>事業開発参画機会</span><span>経営直下ポジション</span><span>将来の経営中核候補</span>
+      </div>
       <div class="pos-switch">
         <a href="/recruit/">← 採用情報一覧</a>
         <a href="/recruit/admin/" class="current">Administrative Executive（管理部門）</a>
@@ -215,7 +231,8 @@
       <div class="reveal">
         <p class="section-label">Job Summary</p>
         <h2>職務概要</h2>
-        <p class="section-sub">日本法人の事業拡大に伴い、正社員のAdministrative Executiveを1名採用します。日常の管理業務を担うだけでなく、<strong>会社と共に成長し、会社の発展を支えるコアメンバー</strong>として活躍いただける方を求めています。</p>
+        <p class="section-sub">2026年に設立した日本法人の事業拡大に伴い、会社の成長を支える<strong>創業メンバーとして、正社員のAdministrative Executiveを1名</strong>採用します。</p>
+        <p class="section-sub">当社の管理部門総合職として、総務・契約管理・行政対応業務をお任せします。日常の管理業務にとどまらず、<strong>創業メンバーとして会社運営や事業開発にも関われる</strong>ポジションです。</p>
         <p class="section-sub">当面は在宅（リモートワーク）中心の勤務で、シンガポール拠点のマネージャーから英語で指示を受け、レポートしながら業務を進めていただきます。</p>
       </div>
       <div class="reveal">
@@ -227,6 +244,16 @@
           <li><strong>フルリモート（当面）による柔軟な働き方。</strong>将来のオフィスは東京都内に開設予定です。</li>
         </ul>
         <p class="partner-note">単なる管理担当者ではなく、会社の長期的な成長に伴走し、共に価値を創り、より重要な役割と挑戦を担っていただけるパートナーを求めています。</p>
+        <div class="support-grid">
+          <div class="support-card">
+            <h3><small>SUPPORT</small>サポート体制</h3>
+            <p>入社後は、シンガポール拠点マネージャーのもとで業務を習得いただきます。まずは管理業務全般を担当しながら、日本法人の事業運営を学んでいただきます。経営層との距離も近く、会社づくりを実践的に学べる環境です。</p>
+          </div>
+          <div class="support-card">
+            <h3><small>ORGANIZATION</small>組織体制</h3>
+            <p>日本法人の立ち上げメンバーとして参画いただきます。シンガポール拠点マネージャー直属のため、経営視点を学びながらグローバル環境で活躍できる組織体制です。</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
