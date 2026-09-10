@@ -3,16 +3,16 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>採用情報｜Administrative Executive（正社員）募集 - Forcewin-ICT株式会社</title>
-<meta name="description" content="Forcewin-ICT株式会社の採用情報。2026年に始動した日本法人の創業メンバーとして、Administrative Executive（管理部門総合職）を1名募集します。当面はフルリモート、年収450万〜700万円。" />
+<title>採用情報｜経営管理責任者候補（常勤役員候補）募集 - Forcewin-ICT株式会社</title>
+<meta name="description" content="Forcewin-ICT株式会社の採用情報。建設業許可の要件「常勤役員等（経営業務の管理責任者）」を担う経営管理責任者候補を募集します。建設業の経営業務管理経験5年以上。年収600万〜850万円。" />
 <meta name="theme-color" content="#eeebe1" />
 <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="採用情報｜Administrative Executive（正社員）募集 - Forcewin-ICT株式会社" />
-<meta property="og:description" content="2026年に始動した日本法人の創業メンバー募集。当面はフルリモート、年収450万〜700万円。" />
-<meta property="og:url" content="https://forcewin-ict.jp/recruit/admin/" />
+<meta property="og:title" content="採用情報｜経営管理責任者候補（常勤役員候補）募集 - Forcewin-ICT株式会社" />
+<meta property="og:description" content="建設業許可の要件「常勤役員等（経管）」を担う経営人材の募集。建設業の経営業務管理経験5年以上。" />
+<meta property="og:url" content="https://forcewin-ict.jp/recruit/manager/" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,26 +22,13 @@
 /* ===== recruit page local styles ===== */
 .recruit-hero{position:relative;padding:170px 0 90px;overflow:hidden}
 .recruit-hero .container{position:relative;max-width:880px;text-align:center}
-.recruit-hero h1{font-size:clamp(2rem,4.6vw,3.4rem);margin:14px 0 10px}
-.recruit-hero .lead{color:var(--ink-soft);max-width:640px;margin:0 auto 30px;font-size:1.02rem}
-.hero-tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+.recruit-hero h1{font-size:clamp(1.7rem,4vw,3rem);margin:14px 0 10px}
+.recruit-hero .lead{color:var(--ink-soft);max-width:680px;margin:0 auto 30px;font-size:1.02rem}
+.hero-tags{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:26px}
 .hero-tags span{
   font-family:var(--font-mono);font-size:.78rem;letter-spacing:.06em;
   border:1px solid var(--line);border-radius:999px;padding:6px 14px;color:var(--accent);
 }
-
-.hero-tags.appeal{margin-top:-22px;margin-bottom:34px}
-.hero-tags.appeal span{
-  background:rgba(214,233,168,.14);border-color:transparent;color:var(--accent);
-  font-size:.74rem;padding:5px 12px;
-}
-
-/* support / organization cards */
-.support-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:44px}
-.support-card{background:#fff;border-radius:var(--radius);padding:28px 26px;box-shadow:0 4px 18px rgba(34,56,15,.08)}
-.support-card h3{color:#2a4612;margin-bottom:10px;font-size:1.05rem}
-.support-card h3 small{font-family:var(--font-mono);font-weight:600;font-size:.72rem;letter-spacing:.12em;color:#5a7a32;display:block;margin-bottom:2px}
-.support-card p{font-size:.92rem;color:rgba(34,56,15,.82)}
 
 /* position switcher */
 .pos-switch{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
@@ -80,6 +67,9 @@
 .req-block li{position:relative;padding:5px 0 5px 22px;font-size:.92rem;color:rgba(34,56,15,.82)}
 .req-block li::before{content:"✓";position:absolute;left:0;top:5px;color:#5a7a32;font-weight:700}
 .req-block.welcome li::before{content:"＋"}
+.req-block.quals li::before{content:"◎"}
+.req-note{margin-top:12px;font-size:.83rem;color:rgba(34,56,15,.6)}
+.req-lead{font-size:.88rem;color:rgba(34,56,15,.7);margin-bottom:6px}
 
 /* why join */
 .why-list{list-style:none;margin-top:34px;display:grid;gap:16px}
@@ -159,10 +149,11 @@
   padding:17px;border-radius:999px;transition:transform .2s,background .2s,box-shadow .2s;
 }
 .submit-btn:hover{background:#3a5320;transform:translateY(-2px);box-shadow:0 12px 30px rgba(0,0,0,.25)}
+.submit-btn:disabled{opacity:.7;cursor:default;transform:none;box-shadow:none}
 .privacy-note{margin-top:18px;font-size:.8rem;color:rgba(34,56,15,.55);text-align:center}
 
 @media (max-width:860px){
-  .duty-grid,.req-cols,.support-grid{grid-template-columns:1fr}
+  .duty-grid,.req-cols{grid-template-columns:1fr}
   .process-steps{grid-template-columns:1fr 1fr}
   .job-table>div{grid-template-columns:1fr}
   .job-table dt{padding:12px 20px 4px;background:rgba(0,0,0,.14)}
@@ -208,19 +199,16 @@
   <section class="recruit-hero">
     <div class="container">
       <p class="section-label">Recruit</p>
-      <h1>Administrative Executive<br><span class="accent">正社員募集</span></h1>
-      <p class="lead">2026年に始動した日本法人の創業メンバーとして、会社の成長を支えるコアメンバーを1名募集します。</p>
+      <h1>経営管理責任者候補<br><span class="accent">常勤役員候補（正社員）</span></h1>
+      <p class="lead">建設業許可の要件「常勤役員等（経営業務の管理責任者）」を担い、創業期の日本法人の経営管理体制づくりを推進する経営人材を1名募集します。</p>
       <div class="hero-tags">
-        <span>正社員</span><span>当面フルリモート</span><span>年収450万〜700万円</span><span>英語必須</span><span>入社時期 即日〜応相談</span>
-      </div>
-      <div class="hero-tags appeal">
-        <span>2026年設立・日本法人創業メンバー</span><span>シンガポール直属</span><span>英語活用環境</span><span>国際グループ企業</span><span>海外拠点連携</span><span>事業開発参画機会</span><span>経営直下ポジション</span><span>将来の経営中核候補</span>
+        <span>正社員（役員候補）1名</span><span>年収600万〜850万円</span><span>当面フルリモート</span><span>建設業の経営経験5年以上</span><span>許可申請経験者優遇</span><span>英語歓迎</span>
       </div>
       <div class="pos-switch">
         <a href="/recruit/">← 採用情報一覧</a>
-        <a href="/recruit/admin/" class="current">Administrative Executive（管理部門）</a>
+        <a href="/recruit/admin/">Administrative Executive（管理部門）</a>
         <a href="/recruit/engineer/">電気通信工事技術者</a>
-        <a href="/recruit/manager/">経営管理責任者</a>
+        <a href="/recruit/manager/" class="current">経営管理責任者</a>
       </div>
       <a href="#apply" class="btn btn-primary btn-lg">この求人に応募する</a>
     </div>
@@ -232,29 +220,18 @@
       <div class="reveal">
         <p class="section-label">Job Summary</p>
         <h2>職務概要</h2>
-        <p class="section-sub">2026年に設立した日本法人の事業拡大に伴い、会社の成長を支える<strong>創業メンバーとして、正社員のAdministrative Executiveを1名</strong>採用します。</p>
-        <p class="section-sub">当社の管理部門総合職として、総務・契約管理・行政対応業務をお任せします。日常の管理業務にとどまらず、<strong>創業メンバーとして会社運営や事業開発にも関われる</strong>ポジションです。</p>
-        <p class="section-sub">当面は在宅（リモートワーク）中心の勤務で、シンガポール拠点のマネージャーから英語で指示を受け、レポートしながら業務を進めていただきます。</p>
+        <p class="section-sub">Forcewin-ICT株式会社は建設業許可（電気通信工事業）の取得を進めており、許可要件である<strong>「常勤役員等（経営業務の管理責任者）」を担っていただける経営人材を1名採用</strong>します。技術面の要件（営業所技術者）は別途採用を進めており、本ポジションは<strong>経営面の要件と、日本法人の経営管理そのもの</strong>を担う中核ポジションです。</p>
+        <p class="section-sub">入社後、当社の<strong>常勤役員等（取締役または執行役員）に就任</strong>いただき、建設業許可の取得・維持を経営面から担っていただきます。あわせて、創業期の日本法人の経営管理体制（契約・原価・安全・法令遵守）の構築を、代表取締役およびシンガポール本部と連携しながら推進していただきます。</p>
       </div>
       <div class="reveal">
         <h3 style="margin-top:44px;color:#2a4612;font-size:1.2rem">当社に入社する理由</h3>
         <ul class="why-list">
-          <li><strong>2026年に始動したばかりの日本法人に、創業メンバーとして参画できます。</strong>経営層のすぐ近くで裁量を持ち、組織の立ち上げそのものに関わる経験は、今この時期にしか得られません。</li>
-          <li><strong>4カ国に展開する国際的なグループの一員として、</strong>英語を日常的に実務で使い、シンガポール拠点と連携しながら働けます。</li>
-          <li><strong>管理業務にとどまらず、会社運営・事業開発へと役割を拡大できます。</strong>「Administrative Executiveとして入社し、経営の中核へ成長する」キャリアパスを用意しています。</li>
-          <li><strong>フルリモート（当面）による柔軟な働き方。</strong>将来のオフィスは東京都内に開設予定です。</li>
+          <li><strong>建設業許可取得の要となる、代えの利かない経営ポジションです。</strong>あなたの経歴そのものが、会社の事業基盤（許可）をつくります。</li>
+          <li><strong>2026年に始動した日本法人の経営中枢に、立ち上げ期から参画できます。</strong>代表取締役・シンガポール本部とともに、経営管理体制をゼロから設計できる機会です。</li>
+          <li><strong>日本・シンガポール・マレーシア・タイの4カ国グループ</strong>の日本経営を担い、データセンターという成長領域で事業を拡大していくポジションです。</li>
+          <li><strong>役員就任を前提とした処遇</strong>で迎えます。経験・前職報酬を考慮した給与設計、役員就任後は役員報酬として設計します。</li>
         </ul>
-        <p class="partner-note">単なる管理担当者ではなく、会社の長期的な成長に伴走し、共に価値を創り、より重要な役割と挑戦を担っていただけるパートナーを求めています。</p>
-        <div class="support-grid">
-          <div class="support-card">
-            <h3><small>SUPPORT</small>サポート体制</h3>
-            <p>入社後は、シンガポール拠点マネージャーのもとで業務を習得いただきます。まずは管理業務全般を担当しながら、日本法人の事業運営を学んでいただきます。経営層との距離も近く、会社づくりを実践的に学べる環境です。</p>
-          </div>
-          <div class="support-card">
-            <h3><small>ORGANIZATION</small>組織体制</h3>
-            <p>日本法人の立ち上げメンバーとして参画いただきます。シンガポール拠点マネージャー直属のため、経営視点を学びながらグローバル環境で活躍できる組織体制です。</p>
-          </div>
-        </div>
+        <p class="partner-note">許可要件を満たすだけの方ではなく、創業期の会社経営を共に担っていただけるパートナーを求めています。</p>
       </div>
     </div>
   </section>
@@ -267,20 +244,20 @@
         <h2>募集要項</h2>
       </div>
       <dl class="job-table reveal" style="margin-top:40px">
-        <div><dt>職種</dt><dd>Administrative Executive（管理部門総合職／英語必須）</dd></div>
-        <div><dt>雇用形態</dt><dd>正社員／試用期間3カ月</dd></div>
+        <div><dt>職種</dt><dd>経営管理責任者候補（建設業許可「常勤役員等（経管）」／役員候補）</dd></div>
+        <div><dt>歓迎する人材</dt><dd>建設業の経営業務管理経験5年以上／建設業許可申請の経験者優遇／英語歓迎</dd></div>
+        <div><dt>雇用形態</dt><dd>正社員として入社後、取締役または執行役員へ就任予定<small>※役員就任時の契約形態（委任契約への切替・役員報酬設計）は応相談</small></dd></div>
         <div><dt>採用人数</dt><dd>1名</dd></div>
-        <div><dt>入社時期</dt><dd>即日〜応相談</dd></div>
-        <div><dt>勤務地</dt><dd>当面フルリモート勤務、在宅勤務中心<small>※将来的に東京都内へオフィス開設予定</small><small>※必要に応じて外出・国内外出張あり</small></dd></div>
-        <div><dt>変更の範囲</dt><dd>就業場所：会社の定める事業所（リモートワーク含む）<small>業務内容：会社の定める業務（事業拡大に伴う運営・事業開発業務を含む）</small></dd></div>
-        <div><dt>レポートライン</dt><dd>当面はシンガポール拠点のマネージャー直属（指示・報告は英語）</dd></div>
+        <div><dt>入社時期</dt><dd>応相談</dd></div>
+        <div><dt>勤務地</dt><dd>当面フルリモート勤務、在宅勤務中心<small>※将来的に東京都内へオフィス開設予定</small><small>※必要に応じて官公庁・銀行等への外出、国内外出張あり</small><small>※建設業許可上の常勤要件を満たす勤務管理（テレワーク運用基準）を整備します</small></dd></div>
+        <div><dt>変更の範囲</dt><dd>就業場所：会社の定める事業所（リモートワーク含む）<small>業務内容：会社の定める業務</small></dd></div>
         <div><dt>勤務時間</dt><dd>9:30〜18:30（休憩60分／実働8時間）</dd></div>
         <div><dt>時間外労働</dt><dd>あり（残業手当あり）</dd></div>
         <div><dt>リモートワーク</dt><dd>相談可</dd></div>
         <div><dt>休日休暇</dt><dd>完全週休2日制（土・日）、祝日、年末年始休暇、年次有給休暇（入社6カ月経過後に10日付与）</dd></div>
-        <div><dt>給与</dt><dd>年収450万〜700万円（経験・能力を考慮のうえ決定）／賞与なし<small>会社の成長に応じた昇給・昇進の機会あり</small></dd></div>
+        <div><dt>給与</dt><dd><strong>年収600万〜850万円</strong>（経験・前職報酬を考慮のうえ決定）<small>※役員就任後は役員報酬として設計</small></dd></div>
         <div><dt>諸手当・環境</dt><dd>外出・出張時の交通費実費支給／業務用PC貸与／通信費補助あり<small>※住宅手当・家族手当なし</small></dd></div>
-        <div><dt>社会保険</dt><dd>健康保険・厚生年金・雇用保険・労災保険</dd></div>
+        <div><dt>社会保険</dt><dd>健康保険・厚生年金・雇用保険・労災保険<small>※役員就任後は雇用保険・労災の適用が変わる場合があります</small></dd></div>
         <div><dt>退職金・寮社宅</dt><dd>なし</dd></div>
       </dl>
     </div>
@@ -295,64 +272,66 @@
       </div>
       <div class="duty-grid">
         <div class="duty-card reveal">
-          <h3>総務・行政手続き</h3>
+          <h3>建設業許可・法令対応</h3>
           <ul>
-            <li>会社の日常的な管理業務およびオフィス運営全般</li>
-            <li>官公庁への各種申請、許認可などの行政手続きの対応</li>
-            <li>官公庁・銀行・関係機関への訪問による各種手続き</li>
+            <li>経営業務の管理責任者（常勤役員等）としての許可申請対応（経歴証明書類の提出を含む）</li>
+            <li>許可取得後の維持管理（決算変更届、各種変更届、更新手続き）</li>
+            <li>建設業法その他関連法令の遵守体制の構築</li>
           </ul>
         </div>
         <div class="duty-card reveal">
-          <h3>渉外・ドキュメント管理</h3>
+          <h3>経営管理</h3>
           <ul>
-            <li>官公庁・銀行・会計士・弁護士・パートナー企業との日常的な連絡・調整</li>
-            <li>契約書・見積書・請求書など各種業務書類の作成・管理</li>
+            <li>事業計画・予算・原価管理</li>
+            <li>工事請負契約・協力会社契約の審査・管理</li>
+            <li>財務・労務など管理部門の統括（管理部門スタッフと連携）</li>
           </ul>
         </div>
         <div class="duty-card reveal">
-          <h3>経営・プロジェクト支援</h3>
+          <h3>組織運営</h3>
           <ul>
-            <li>プロジェクト管理の補助、部門間の調整、業務推進のサポート</li>
-            <li>経営層から依頼される各種業務のサポート</li>
+            <li>安全衛生・品質管理体制の構築、社内規程の整備</li>
+            <li>技術者（営業所技術者）・管理部門との連携</li>
           </ul>
         </div>
         <div class="duty-card reveal">
-          <h3>事業発展への参画</h3>
+          <h3>経営参画</h3>
           <ul>
-            <li>事業の成長に応じた、会社運営・事業拡大に関わる業務への参画</li>
+            <li>経営会議への参画</li>
+            <li>事業開発・拠点展開への関与</li>
           </ul>
         </div>
       </div>
 
       <div class="req-cols">
         <div class="req-block reveal">
-          <h3><small>REQUIREMENTS</small>応募要件</h3>
+          <h3><small>REQUIREMENTS</small>必須条件</h3>
           <ul>
-            <li>総務・管理部門・オフィス管理などの関連実務経験2年以上</li>
-            <li>日本語および英語でのビジネスコミュニケーション能力（マネージャーへの報告・官公庁や取引先との折衝が可能なレベル）</li>
-            <li>必要時に官公庁・銀行・関係機関へ自ら出向いて手続きできる方（国内・海外出張対応可）</li>
-            <li>学歴不問（学歴・職歴よりも人物・能力を重視します）</li>
+            <li>建設業を営む会社の役員（取締役・執行役員等）、個人事業主、または支店長・営業所長等として、<strong>通算5年以上の経営業務の管理経験</strong></li>
+            <li>上記の経験を公的書類で証明できること（証明書類の収集にご協力いただける方）</li>
+            <li>当社に常勤できること（他社の常勤役員・経営業務の管理責任者・専任技術者等を兼任していないこと）</li>
+            <li>入社後、当社の常勤役員等（取締役または執行役員）への就任に同意いただけること</li>
           </ul>
         </div>
-        <div class="req-block reveal">
-          <h3><small>SKILLS &amp; COMPETENCIES</small>スキルと能力</h3>
+        <div class="req-block quals reveal">
+          <h3><small>DOCUMENTS</small>経験を証明する書類（例）</h3>
+          <p class="req-lead">建設業許可申請で行政庁に提出するため、以下のような書類での経歴証明が必要です。</p>
           <ul>
-            <li>Microsoft Office（Word／Excel／PowerPoint）の実務スキル</li>
-            <li>高い事務処理能力と細部への注意力、複数業務の優先順位管理</li>
-            <li>良好な対人コミュニケーション能力</li>
-            <li>契約書・経営情報など機密情報を適切に扱えるプロフェッショナリズム</li>
-            <li>指示を待たずに主体的に動ける姿勢と強い責任感</li>
-            <li>新しい業務知識を速やかに習得する学習力と、自ら解決策を提案できる問題解決力</li>
+            <li>履歴事項全部証明書（役員登記の期間）</li>
+            <li>在籍した会社の建設業許可通知書・決算変更届</li>
+            <li>工事請負契約書・注文書・請求書 等</li>
           </ul>
+          <p class="req-note">※選考の過程で、証明書類が揃うかどうかを事前に確認させていただきます。</p>
         </div>
       </div>
       <div class="req-block welcome reveal" style="margin-top:22px">
-        <h3><small>PREFERRED</small>歓迎要件</h3>
+        <h3><small>PREFERRED</small>歓迎条件</h3>
         <ul>
-          <li>経営層・役員のサポート経験</li>
-          <li>スタートアップ・少数精鋭組織での就業経験</li>
-          <li>許認可・補助金など行政手続きの実務経験</li>
-          <li>海外拠点や外国人メンバーとの協働経験</li>
+          <li>電気・電気通信・設備工事など、当社事業に近い業種での経営経験</li>
+          <li>建設業許可申請、決算変更届、経営事項審査（経審）の実務経験</li>
+          <li>建設会社の立ち上げ・許可取得を経験された方</li>
+          <li>安全衛生管理体制の構築経験</li>
+          <li>英語での簡単なコミュニケーションが可能な方（シンガポール本部との連携）</li>
         </ul>
       </div>
     </div>
@@ -366,12 +345,12 @@
         <h2>選考プロセス</h2>
       </div>
       <div class="process-steps">
-        <div class="process-step reveal"><h3>書類選考</h3><p>履歴書・職務経歴書をご提出ください</p></div>
-        <div class="process-step reveal"><h3>一次面接</h3><p>シンガポール拠点マネージャーとの英語面接（オンライン）</p></div>
-        <div class="process-step reveal"><h3>二次面接</h3><p>日本語での面接（オンライン）</p></div>
-        <div class="process-step reveal"><h3>内定</h3><p>入社時期は即日〜応相談</p></div>
+        <div class="process-step reveal"><h3>書類選考</h3><p>職務経歴書＋経営経験の証明可能性の事前確認（役員登記期間・在籍会社の建設業許可の有無など）</p></div>
+        <div class="process-step reveal"><h3>一次面接</h3><p>代表取締役／オンライン可</p></div>
+        <div class="process-step reveal"><h3>二次面接</h3><p>シンガポール本部経営層を含む／オンライン</p></div>
+        <div class="process-step reveal"><h3>オファー</h3><p>処遇・役員就任時期・許可申請スケジュールのすり合わせ</p></div>
       </div>
-      <p class="process-note">※英語面接では、実務レベルの英語コミュニケーション力を確認させていただきます。</p>
+      <p class="process-note">※選考の性質上、通常の採用より「経歴の証明書類が揃うか」の確認を重視させていただきます。</p>
     </div>
   </section>
 
@@ -407,40 +386,44 @@
 
         <div class="field">
           <label for="f-job">現在の職種・業種 <span class="badge req">必須</span></label>
-          <input type="text" id="f-job" name="現在の職種・業種" placeholder="例：総務 / メーカー" required />
+          <input type="text" id="f-job" name="現在の職種・業種" placeholder="例：取締役 / 電気工事会社" required />
         </div>
 
         <div class="field">
-          <label for="f-years">総務・管理業務の経験年数 <span class="badge req">必須</span></label>
-          <select id="f-years" name="総務・管理業務の経験年数" required>
+          <label for="f-quals">経営経験での役職・地位 <span class="badge req">必須</span></label>
+          <input type="text" id="f-quals" name="保有資格" placeholder="例：取締役（2016〜2024年）／営業所長 など" required />
+        </div>
+
+        <div class="field">
+          <label for="f-years">建設業での経営業務管理の経験年数 <span class="badge req">必須</span></label>
+          <select id="f-years" name="経験年数" required>
             <option value="" selected disabled>選択してください</option>
-            <option>2年未満</option>
-            <option>2〜3年</option>
-            <option>3〜5年</option>
-            <option>5〜10年</option>
-            <option>10年以上</option>
+            <option>5年未満</option>
+            <option>5〜7年</option>
+            <option>7〜10年</option>
+            <option>10〜20年</option>
+            <option>20年以上</option>
           </select>
         </div>
 
         <div class="field">
-          <label for="f-detail">総務・管理業務の経験詳細 <span class="badge req">必須</span></label>
-          <textarea id="f-detail" name="経験詳細" placeholder="担当された業務の内容、会社規模、使用ツール、官公庁・銀行等の手続き経験などをご記入ください。" required></textarea>
+          <label for="f-detail">経営経験の詳細 <span class="badge req">必須</span></label>
+          <textarea id="f-detail" name="経験詳細" placeholder="在籍した会社の業種・建設業許可の有無、役員登記の有無と期間、担当された経営業務の内容、経歴を証明する書類（登記・許可通知書等）の準備可否などをご記入ください。" required></textarea>
         </div>
 
         <div class="field">
-          <label for="f-english">英語力 <span class="badge req">必須</span></label>
-          <select id="f-english" name="英語力" required>
-            <option value="" selected disabled>選択してください</option>
-            <option>日常会話レベル</option>
-            <option>ビジネスレベル（読み書き中心）</option>
-            <option>ビジネスレベル（会話含む）</option>
-            <option>ネイティブレベル</option>
+          <label for="f-english">英語力 <span class="badge opt">任意</span></label>
+          <select id="f-english" name="英語力">
+            <option value="" selected>選択してください（任意）</option>
+            <option>不問レベル（ほぼ使えない）</option>
+            <option>簡単なコミュニケーションが可能</option>
+            <option>ビジネスレベル</option>
           </select>
         </div>
 
         <div class="field">
           <label for="f-start">入社可能時期 <span class="badge req">必須</span></label>
-          <input type="text" id="f-start" name="入社可能時期" placeholder="例：即日 / 2026年9月 / 1ヶ月後" required />
+          <input type="text" id="f-start" name="入社可能時期" placeholder="例：即日 / 2026年11月 / 応相談" required />
         </div>
 
         <div class="field">
@@ -512,6 +495,7 @@
 // 応募送信：自社Google Apps Scriptへ直接送信（履歴書はbase64で添付）
 (function(){
   var ENDPOINT = "https://script.google.com/macros/s/AKfycbw1qkSjvnu3mIG3F7jpgONtDwq1US0g-QMdDNJ29eEXt5SWavoRa1fmku0p7W8ROP7MUg/exec";
+  var POSITION = "経営管理責任者候補（経管／役員候補）";
   var form = document.getElementById("applyForm");
   var btn = document.getElementById("submitBtn");
   if (!form || !btn) return;
@@ -541,11 +525,12 @@
     reader.onload = function(){
       var base64 = String(reader.result).split(",")[1] || "";
       var payload = {
-        "応募職種": "Administrative Executive（管理部門総合職）",
+        "応募職種": POSITION,
         "氏名": val("f-name"),
         "メールアドレス": val("f-email"),
         "電話番号": val("f-tel"),
         "現在の職種・業種": val("f-job"),
+        "保有資格": val("f-quals"),
         "経験年数": val("f-years"),
         "経験詳細": val("f-detail"),
         "英語力": val("f-english"),
