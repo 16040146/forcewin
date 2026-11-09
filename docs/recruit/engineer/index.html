@@ -429,6 +429,11 @@
         </div>
 
         <div class="field">
+          <label for="f-salary">希望年収 <span class="badge opt">任意</span></label>
+          <input type="text" id="f-salary" name="希望年収" placeholder="例：800万円" />
+        </div>
+
+        <div class="field">
           <label for="f-pr">自己PR・志望動機 <span class="badge opt">任意</span></label>
           <textarea id="f-pr" name="自己PR・志望動機" placeholder="このポジションへの志望動機、自己PRをご自由にお書きください。"></textarea>
         </div>
@@ -537,6 +542,7 @@
         "経験詳細": val("f-detail"),
         "英語力": val("f-english"),
         "入社可能時期": val("f-start"),
+        "希望年収": val("f-salary"),
         "自己PR・志望動機": val("f-pr"),
         "_honey": document.getElementById("honeyField").value,
         "fileName": file.name,
